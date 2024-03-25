@@ -1450,12 +1450,12 @@ class BossFight(Screen):
         for sound in self.Knight_sounds:
             if sound:
                 sound.volume = 0.8
-        self.Bandit_sounds = [SoundLoader.load("Sprites/OST/B1.mp3"),
-                             SoundLoader.load("Sprites/OST/B2.mp3"),
-                             SoundLoader.load("Sprites/OST/B3.mp3"),
-                             SoundLoader.load("Sprites/OST/B4.mp3"),
-                             SoundLoader.load("Sprites/OST/B5.mp3"),
-                             SoundLoader.load("Sprites/OST/B6.mp3")
+        self.Bandit_sounds = [SoundLoader.load("Sprites/OST/Boss/Boss_Hurt1.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt2.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt3.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt4.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt5.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt6.mp3")
                              ]
         for sound in self.Bandit_sounds:
             if sound:
