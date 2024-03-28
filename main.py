@@ -742,7 +742,7 @@ class MyGame(Screen):
     def on_enter(self):
         self.sound = SoundLoader.load("Sprites/OST/BanditOST.mp3") 
         if self.sound:
-            self.sound.volume = 0.7
+            self.sound.volume = 0.5
             self.sound.play()
        
         self.sword_sounds = [SoundLoader.load("Sprites/OST/Sword/Sword1.mp3"),
@@ -1147,7 +1147,7 @@ class MyGame3(Screen):
     def on_enter(self):
         self.sound = SoundLoader.load("Sprites/OST/OST3.mp3") 
         if self.sound:
-            self.sound.volume = 0.5
+            self.sound.volume = 0.4
             self.sound.play()
         self.sword_sounds = [SoundLoader.load("Sprites/OST/Sword/Sword1.mp3"),
                              SoundLoader.load("Sprites/OST/Sword/Sword2.mp3"),
@@ -1159,7 +1159,7 @@ class MyGame3(Screen):
             if sound:
                 sound.volume = 0.5
 
-        self.bandit_dead_sound = SoundLoader.load("Sprites/OST/BD.mp3")
+        self.bandit_dead_sound = SoundLoader.load("Sprites/OST/Boss/Boss_Death.mp3")
         if self.bandit_dead_sound :
             self.bandit_dead_sound .volume = 0.6
 
@@ -1181,7 +1181,7 @@ class MyGame3(Screen):
                              SoundLoader.load("Sprites/OST/Boss/Boss_Hurt2.mp3"),
                              SoundLoader.load("Sprites/OST/Boss/Boss_Hurt3.mp3"),
                              SoundLoader.load("Sprites/OST/Boss/Boss_Hurt4.mp3"),
-                             SoundLoader.load("Sprites/OST//BossBoss_Hurt5.mp3"),
+                             SoundLoader.load("Sprites/OST/Boss/Boss_Hurt5.mp3"),
                              SoundLoader.load("Sprites/OST/Boss/Boss_Hurt6.mp3")
                              ]
         for sound in self.Bandit_sounds:
@@ -1420,7 +1420,7 @@ class BossFight(Screen):
     def on_enter(self):
         self.sound = SoundLoader.load("Sprites/OST/OST2.mp3") 
         if self.sound:
-            self.sound.volume = 0.8
+            self.sound.volume = 0.4
             self.sound.play()
         self.sword_sounds = [SoundLoader.load("Sprites/OST/Sword/Sword1.mp3"),
                              SoundLoader.load("Sprites/OST/Sword/Sword2.mp3"),
@@ -1438,7 +1438,7 @@ class BossFight(Screen):
 
         self.Knight_dead_sound = SoundLoader.load("Sprites/OST/Knight/KnightDeath.mp3")
         if self.Knight_dead_sound :
-            self.Knight_dead_sound .volume = 0.5   
+            self.Knight_dead_sound .volume = 0.8  
         
         self.Knight_sounds = [SoundLoader.load("Sprites/OST/Knight/Knight_Hurt1.mp3"),
                              SoundLoader.load("Sprites/OST/Knight/Knight_Hurt2.mp3"),
