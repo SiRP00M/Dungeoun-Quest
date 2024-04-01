@@ -788,7 +788,7 @@ class MyGame(Screen):
         self.last_played_sound = None
         self.background_widget = BackgroundWidget() 
         self.Knight = Fighter(x=0, y=220, name="Knight", max_hp=100,hp=100, strength=0, potions=3, game_instance=self)
-        self.Bandit= Bandit(x=1120, y=250, name="Bandit", max_hp=75,hp=1, strength=0, potions=3, game_instance=self)
+        self.Bandit= Bandit(x=1120, y=250, name="Bandit", max_hp=75,hp=75, strength=0, potions=3, game_instance=self)
         self.Portal= Portal(x=0, y=350, name="Portal", game_instance=self)
         self.add_widget(self.background_widget)
         self.add_widget(self.Knight)
@@ -1191,7 +1191,7 @@ class MyGame3(Screen):
         self.last_played_sound = None
         self.background_widget = BackgroundWidget2() 
         self.Knight = Fighter(x=0, y=220, name="Knight", max_hp=100,hp=100, strength=0, potions=3, game_instance=self)
-        self.Bandit= Boss(x=1200, y=0, name="Boss", max_hp=30,hp=1, strength=0, potions=3, game_instance=self)
+        self.Bandit= Boss(x=1200, y=0, name="Boss", max_hp=30,hp=30, strength=0, potions=3, game_instance=self)
         self.Portal= Portal(x=0, y=350, name="Portal", game_instance=self)
         self.add_widget(self.background_widget)
         self.add_widget(self.Knight)
